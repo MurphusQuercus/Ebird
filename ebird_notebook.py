@@ -7,8 +7,8 @@ arcpy.env.overwriteOutput = True
 
 # getting ebird records from utah in the last week
 
-# "cutee2b7ds8u" is api token code given from ebird website,  'US-UT' filters obvservations to utah, back=30 is the observation from last 30 days) 
-records = get_observations("cutee2b7ds8u", 'US-UT', back=30)
+# "api-token" is api token code given from ebird website. You must create an ebird acount to get one  'US-UT' filters obvservations to utah, back=30 is the observation from last 30 days) 
+records = get_observations("api-token", 'US-UT', back=30)
 
 
 # Creating empty lists that will be populated with info from records variable 
